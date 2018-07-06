@@ -119,7 +119,7 @@ footer svg {
   }
 
   main {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
     margin-bottom: 2rem;
   }
@@ -129,6 +129,12 @@ footer svg {
     padding-top: 2rem;
     border-top-width: 3px;
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 500px) {
+  main {
+    font-size: 1.2rem;
   }
 }
 
