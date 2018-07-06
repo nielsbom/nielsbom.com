@@ -53,6 +53,10 @@ main a:hover {
   text-decoration: underline;
 }
 
+main h2 a:hover {
+  text-decoration: none;
+}
+
 nav,
 footer {
   border-style: solid;
@@ -64,6 +68,67 @@ footer svg {
   height: 2.5rem;
   stroke-width: 1px;
 }
+
+/* Fancy underlines start */
+nav a {
+  font-size: 20px;
+  color: #584e4a;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+nav a:hover {
+  color: #505160;
+}
+
+nav a.current:hover {
+  color: #aebd38;
+}
+
+nav a::before,
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #aebd38;
+}
+
+nav a::before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+
+nav a::after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+nav a:hover::before,
+nav a:hover::after,
+nav a:focus::before,
+nav a:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav a:hover::before,
+nav a:focus::before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
+
+/* Fancy underlines end */
 
 @media (min-width: 0) {
   .wrapper {
