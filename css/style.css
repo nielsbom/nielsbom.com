@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Charter;
-  src: url(fonts/Charter Regular.ttf);
+  src: url("fonts/Charter Regular.ttf");
 }
 
 body {
