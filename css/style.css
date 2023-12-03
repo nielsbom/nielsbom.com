@@ -5,6 +5,10 @@
   src: url("fonts/Charter Regular.ttf");
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: Charter, Georgia, serif;
   font-size: 62.5%;
@@ -55,6 +59,10 @@ main a:hover {
 
 main h2 a:hover {
   text-decoration: none;
+}
+
+main img {
+  margin-top: 2rem;
 }
 
 nav,
