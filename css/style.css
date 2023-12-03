@@ -107,7 +107,8 @@ nav a::before {
 nav a::after {
   opacity: 0;
   transform: translateY(4px);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
 }
 
 nav a:hover::before,
@@ -120,12 +121,14 @@ nav a:focus::after {
 
 nav a:hover::before,
 nav a:focus::before {
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
 }
 
 nav a:hover::after,
 nav a:focus::after {
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
 }
 
 /* Fancy underlines end */
@@ -268,9 +271,9 @@ nav a:focus::after {
     display: grid;
     grid-template-columns: 10rem auto;
     grid-template-areas:
-      '.      header'
-      'nav    content'
-      '.      footer';
+      ".      header"
+      "nav    content"
+      ".      footer";
     grid-column-gap: 2rem;
   }
 
