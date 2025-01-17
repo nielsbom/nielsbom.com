@@ -202,27 +202,6 @@ main {
   margin-bottom: 2rem;
 }
 
-main section {
-  margin-bottom: 3rem;
-}
-
-main p:not(:last-of-type) {
-  margin-bottom: 1rem;
-}
-
-main ul {
-  margin-bottom: 1rem;
-}
-
-main ul {
-  list-style: disc;
-  margin-top: default;
-  margin-bottom: default;
-}
-main ul li {
-  padding-left: 1rem;
-}
-
 footer {
   margin-top: 1rem;
   padding-top: 2rem;
